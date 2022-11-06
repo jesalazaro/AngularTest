@@ -1,0 +1,11 @@
+<div style="border-bottom: 1px solid #B0B0B0; padding: 8px;" >
+
+    <div class="header">
+      <p>{{title}} <a (click)="toggle()" style="float: right;">Toggle</a></p>
+    </div>
+  
+    <div class="content" [hidden]="!active">
+      <ng-content></ng-content>  
+    </div>
+  
+  </div>
